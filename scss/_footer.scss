@@ -1,0 +1,97 @@
+/* Color Variables */
+$color-twitter: #2b97f1;
+$color-kofi: #ff5f5f;
+
+/* Social Icon Mixin */
+@mixin social-icon($color) {
+  background: $color;
+  color: #fff;
+
+  .tooltip {
+    background: $color!important;
+    color: currentColor!important;
+
+    &:after {
+      border-top-color: $color!important;
+    }
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.85rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: #fff;
+
+    .tooltip {
+      visibility: visible!important;
+      opacity: 1!important;
+      transform: translate(-50%, -110%)!important;
+    }
+  }
+    
+  &:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+  }
+  
+  &--twitter { @include social-icon($color-twitter); }
+  &--kofi { @include social-icon($color-kofi); 
+    img {
+      width:50px;
+    }
+  }
+  
+  i {
+    position: relative;
+    top: 1px;
+  }
+}
+
+/* Tooltips */
+.tooltip {
+  display: block!important;
+  position: absolute!important;
+  top: 0!important;
+  left: 50%!important;
+  padding: 0.8rem 1rem!important;
+  border-radius: 40px!important;
+  font-size: 0.8rem!important;
+  font-weight: bold!important;
+  opacity: 0!important;
+  pointer-events: none!important;
+  text-transform: uppercase!important;
+  transform: translate(-50%, -100%)!important;
+  transition: all 0.3s ease!important;
+  z-index: 1!important;
+  
+  &:after {
+    display: block!important;
+    position: absolute!important;
+    bottom: 1px!important;
+    left: 50%!important;
+    width: 0!important;
+    height: 0!important;
+    content: ""!important;
+    border: solid!important;
+    border-width: 10px 10px 0 10px!important;
+    border-color: transparent!important;
+    transform: translate(-50%, 100%)!important;
+  }
+}
