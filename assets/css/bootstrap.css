@@ -11,6 +11,13 @@
     height: 100%;
   }
 }
+.home h1, .home .h1 {
+  color: transparent;
+}
+.home img {
+  margin-top: 10rem;
+}
+
 /*     art      */
 .art .hero-overlay, .art-article .hero-overlay {
   height: 375px !important;
