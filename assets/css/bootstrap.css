@@ -18,6 +18,10 @@
   margin-top: 10rem;
 }
 
+p > img {
+  width: 100%;
+}
+
 /*     art      */
 .art .hero-overlay, .art-article .hero-overlay {
   height: 375px !important;
