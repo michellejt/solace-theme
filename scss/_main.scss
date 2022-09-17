@@ -32,7 +32,7 @@ body {
   overflow: hidden;
 }
 
-section.hScroll {
+section.hscroll {
   height: 100vw;
   width: 100vh;
   padding: 20px;
@@ -42,7 +42,7 @@ section.hScroll {
   transform: rotate(-90deg) translateY(-100vh);
 }
 
-.hScroll_block {
+.hscrollblock {
   width: calc(100vh - 140px);
   height: calc(100vh - 40px);
   background: pink;
