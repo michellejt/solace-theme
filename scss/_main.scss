@@ -21,3 +21,47 @@ $color:#fff;
 .solace img {
   width: 100%!important;
 }
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+section.hScroll {
+  height: 100vw;
+  width: 100vh;
+  padding: 20px;
+  background: #222;
+  overflow: hidden auto;
+  transform-origin: right top;
+  transform: rotate(-90deg) translateY(-100vh);
+}
+
+.hScroll_block {
+  width: calc(100vh - 140px);
+  height: calc(100vh - 40px);
+  background: pink;
+  margin-bottom: 20px;
+  position: relative;
+  transform-origin: left top;
+  transform: rotate(90deg) translateY(calc(-100vh + 40px));
+}
+
+.hScroll_block img {
+  width:100%!important;
+  object-fit: cover;
+}
+
+.hScroll_block:last-child {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
