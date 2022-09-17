@@ -38,7 +38,7 @@ body {
   padding: 20px;
   background: #222;
   overflow: hidden auto;
-  transform-origin: left center;
+  transform-origin: right top;
   transform: rotate(-90deg) translateY(-100vh);
 }
 
