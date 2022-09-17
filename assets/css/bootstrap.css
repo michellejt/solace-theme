@@ -38,7 +38,7 @@ body {
   padding: 20px;
   background: #222;
   overflow: hidden auto;
-  transform-origin: right top;
+  transform-origin: left center;
   transform: rotate(-90deg) translateY(-121vh);
 }
 
@@ -48,8 +48,8 @@ body {
   background: pink;
   margin-bottom: 20px;
   position: relative;
-  transform-origin: left top;
-  transform: rotate(90deg) translateY(calc(-100vh + 40px));
+  transform-origin: left center;
+  transform: rotate(90deg) translateY(100vh);
 }
 
 .hscrollblock img {
