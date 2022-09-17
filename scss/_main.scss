@@ -52,12 +52,12 @@ section.hscroll {
   transform: rotate(90deg) translateY(calc(-100vh + 40px));
 }
 
-.hScroll_block img {
+.hscrollblock img {
   width:100%!important;
   object-fit: cover;
 }
 
-.hScroll_block:last-child {
+.hscrollblock:last-child {
   margin: 0;
 }
 
