@@ -49,7 +49,7 @@ body {
   margin-bottom: 20px;
   position: relative;
   transform-origin: left center;
-  transform: rotate(90deg) translateY(100vh);
+  transform: rotate(90deg) translateY(-100vh);
 }
 
 .hscrollblock img {
