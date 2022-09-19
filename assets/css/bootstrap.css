@@ -32,37 +32,11 @@ body {
   overflow: hidden;
 }
 
-.hscroll {
-  height: 100vw;
-  width: 100vh;
-  padding: 20px;
-  background: #222;
-  overflow: hidden auto;
-  transform-origin: right top;
-  transform: rotate(-90deg) translateY(-100vh);
-}
-
-.hscrollblock {
-  width: calc(100vh - 140px);
-  height: calc(100vh - 40px);
-  background: pink;
-  margin-bottom: 20px;
-  position: relative;
-  transform-origin: left top;
-  transform: rotate(90deg) translateY(calc(-100vh + 40px));
-}
-
-.hscrollblock img {
-  object-fit: cover;
-}
-
-.hscrollblock:last-child {
-  margin: 0;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+.slide:nth-child(1) img {
+  width: 100% !important; /* image box size as % of container, see step 1 */
+  height: 100vh !important; /* image box size as % of container, see step 1 */
+  object-fit: cover !important; /* matching of image pixels to image box, see step 2 */
+  object-position: 0 63%;
 }
 
 /*     art      */
