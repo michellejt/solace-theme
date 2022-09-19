@@ -32,7 +32,7 @@ body {
   overflow: hidden;
 }
 
-.slide:nth-child(1) img {
+.slide:nth-child(1) img:nth-child(2) {
   width: 100% !important; /* image box size as % of container, see step 1 */
   height: 100vh !important; /* image box size as % of container, see step 1 */
   object-fit: cover !important; /* matching of image pixels to image box, see step 2 */
