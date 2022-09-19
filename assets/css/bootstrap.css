@@ -20,6 +20,7 @@
 
 .solace img {
   width: inherit !important;
+  height: 100vh;
 }
 
 * {
