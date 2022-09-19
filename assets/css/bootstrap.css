@@ -32,11 +32,25 @@ body {
   overflow: hidden;
 }
 
-.slide:nth-child(1) p + img {
+.slide:nth-child(1) p > img {
   width: 100% !important; /* image box size as % of container, see step 1 */
   height: 100vh !important; /* image box size as % of container, see step 1 */
   object-fit: cover !important; /* matching of image pixels to image box, see step 2 */
   object-position: 0 63%;
+}
+
+h1#solace- img, #solace-.h1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px; /* Half the height */
+  margin-left: -250px; /* Half the width */
+}
+
+h1#solace-, #solace-.h1 {
+  color: transparent;
+  height: 0px;
+  margin-bottom: 0;
 }
 
 /*     art      */
