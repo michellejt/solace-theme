@@ -1,4 +1,4 @@
-console.log("hellloo")
+console.log("hallp")
 const loadImages = document.querySelectorAll('img.halp')
 
 const observer = new IntersectionObserver(observerHandler, {
