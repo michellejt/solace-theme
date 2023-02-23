@@ -1,5 +1,5 @@
 console.log("hellloo")
-const loadImages = document.querySelectorAll('img')
+const loadImages = document.getElementsByName('img')
 
 const observer = new IntersectionObserver(observerHandler, {
     threshold: 1.0
