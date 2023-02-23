@@ -1,3 +1,4 @@
+console.log("hellloo")
 const loadImages = document.querySelectorAll('img.lazy')
 
 const observer = new IntersectionObserver(observerHandler, {
