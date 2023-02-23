@@ -2,7 +2,7 @@ console.log("hallp")
 const loadImages = document.querySelectorAll('img.halp')
 
 const observer = new IntersectionObserver(observerHandler, {
-    threshold: 1.0
+    threshold: 0.1
 })
 
 function observerHandler(entries, observer) {
