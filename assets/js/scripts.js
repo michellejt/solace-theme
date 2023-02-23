@@ -58,10 +58,11 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-$('.category:contains("editorial")').addClass("editorial");
+/* $('.category:contains("editorial")').addClass("editorial");
 $('.category:contains("review")').addClass("review");
 
 $('.category:contains("Editorial")').addClass("editorial");
 $('.category:contains("Review")').addClass("review");
 $('.category:contains("Guide")').addClass("guide");
 
+ */
