@@ -129,3 +129,11 @@ animation-delay: 9s;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.content a {
+  color:inherit
+}
+
+.content a:hover {
+ text-decoration:dotted;
+}
