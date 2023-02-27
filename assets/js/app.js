@@ -11,7 +11,7 @@ const observer = new IntersectionObserver(entries => {
 }, observerOptions);
 
 window.addEventListener('DOMContentLoaded', (event) => { 
-  const articles =Array.from(document.querySelectorAll('fadein')); 
+  const articles =Array.from(document.querySelectorAll('.fadein')); 
   for (let article of articles) {
     observer.observe(article);
   }   
