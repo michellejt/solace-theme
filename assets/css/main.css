@@ -112,7 +112,7 @@ animation-delay: 7s;
 
 .hero .down {
   font-size: 2rem;
-  margin-top: -80px;
+  margin-top: -140px;
   bottom: 0;
   position: relative;
   animation: fadeInAnimation ease 5s;
