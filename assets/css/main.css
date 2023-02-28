@@ -1,139 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
-
-body {
-  background-color: black;
+ body {
+     background-color: black;
 }
-.wrapper {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-    scroll-behavior: smooth;
+ .wrapper {
+     width: 100%;
+     height: 100vh;
+     overflow-y: scroll;
+     scroll-snap-type: y mandatory;
+     -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+     scrollbar-width: none;
+    /* Firefox */
+     scroll-behavior: smooth;
 }
-
-.wrapper::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+ .wrapper::-webkit-scrollbar {
+     display: none;
+    /* Safari and Chrome */
 }
-
-
-.page {
-  width: 100%;
-  height: 100vh;
-  color: white;
-  text-align: center;
-  font-size: 72px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  scroll-snap-align: start;
-  margin: 1px;
+ .page {
+     width: 100%;
+     height: 100vh;
+     color: white;
+     text-align: center;
+     font-size: 72px;
+     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+     scroll-snap-align: start;
+     margin: 1px;
 }
-
-.fadein {
-  width: 100%;
-  height: 100vh;
+ .fadein {
+     width: 100%;
+     height: 100vh;
 }
-
-.page img {
-  width: 100%;
-  height: 100vh;
-  object-fit: contain;
+ .page img {
+     width: 100%;
+     height: 100vh;
+     object-fit: contain;
 }
-.fadein img {
-  transform: rotateY(15deg);
-  opacity: 0;
-  transition-property: transform, opacity;
-  transition-duration: 3s;
-  transition-timing-function:ease-out;
- }
-
-
-.in-view img {
-    transform: none;
-    opacity: 1;
+ .fadein img {
+     transform: rotateY(15deg);
+     opacity: 0;
+     transition-property: transform, opacity;
+     transition-duration: 3s;
+     transition-timing-function:ease-out;
 }
-
-.hero {
-  font-family: 'Advent Pro', sans-serif;
+ .in-view img {
+     transform: none;
+     opacity: 1;
 }
-
-.hero img {
-  width: 100%;
-  height: 150px;
-animation: fadeInAnimation ease 4s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
+ .hero {
+     font-family: 'Advent Pro', sans-serif;
 }
-
-@keyframes fadeInAnimation {
-0% {
-    opacity: 0;
+ .hero img {
+     width: 100%;
+     height: 150px;
+     animation: fadeInAnimation ease 4s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
 }
-100% {
-    opacity: 1;
- }
+ @keyframes fadeInAnimation {
+     0% {
+         opacity: 0;
+    }
+     100% {
+         opacity: 1;
+    }
 }
-
-.hero h1 {
-  font-size: 0;
+ .hero h1 {
+     font-size: 0;
 }
-
-.hero h2 {
-  font-size: 1.5rem;
-  letter-spacing: .25rem;
+ .hero h2 {
+     font-size: 1.5rem;
+     letter-spacing: .25rem;
 }
-
-.hero h3 {
-  font-size: 1rem;
-  letter-spacing: .25rem;
-  animation: fadeInAnimation ease 5s;
-  opacity:0;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
-animation-delay: 7s;
+ .hero h3 {
+     font-size: 1rem;
+     letter-spacing: .25rem;
+     animation: fadeInAnimation ease 5s;
+     opacity:0;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+     animation-delay: 7s;
 }
-
-.content {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
+ .content {
+     display: flex;
+     flex-wrap: nowrap;
+     flex-direction: column;
 }
-
-.inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+ .inner {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100vh;
 }
-
-.hero .links, p {
-  font-size: 1.25rem;
+ .hero .links, p {
+     font-size: 1.25rem;
 }
-
-.hero .down {
-  font-size: 2rem;
-  margin-top: -150px;
-  bottom: 0;
-  position: relative;
-  animation: fadeInAnimation ease 5s;
-  opacity:0;
-  animation-iteration-count: 1;
-animation-fill-mode: forwards;
-animation-delay: 9s;
+ .hero .down {
+     font-size: 2rem;
+     margin-top: -150px;
+     bottom: 0;
+     position: relative;
+     animation: fadeInAnimation ease 5s;
+     opacity:0;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+     animation-delay: 9s;
 }
-
-.down p {
-  font-size: 0.5em;
-  letter-spacing: .25rem;
-  padding: 0;
-  margin-top: 20px;
-  margin-bottom: 0px;
+ .down p {
+     font-size: 0.5em;
+     letter-spacing: .25rem;
+     padding: 0;
+     margin-top: 20px;
+     margin-bottom: 0px;
 }
-
-.content a {
-  color:inherit
+ .content a {
+     color:inherit 
 }
-
-.content a:hover {
- text-decoration:dotted;
+ .content a:hover {
+     text-decoration:dotted;
 }
