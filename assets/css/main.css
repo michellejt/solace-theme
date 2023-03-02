@@ -17,6 +17,12 @@
      display: none;
     /* Safari and Chrome */
 }
+
+html, body, .wrapper {
+    width: auto!important; 
+    overflow-x: hidden
+} 
+
  .page {
      width: 100%;
      height: 100vh;
