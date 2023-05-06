@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
  body {
      background-color: #d0d0d0;
+     margin: -1px;
 }
  .wrapper {
      width: 100%;
