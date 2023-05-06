@@ -44,10 +44,10 @@ html, body, .wrapper {
      object-fit: contain;
 }
  .fadein img {
-     transform: rotateY(15deg);
+     /* transform: rotateY(15deg); */
      opacity: 0;
      transition-property: transform, opacity;
-     transition-duration: 3s;
+     transition-duration: 1s;
      transition-timing-function:ease-out;
 }
  .in-view img {
