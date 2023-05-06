@@ -126,38 +126,45 @@ html, body, .wrapper {
      text-decoration:dotted;
 }
 
-.page:nth-child(1):before {
+.page:nth-child(2):before {
     content:" ";
-    width:100%;
+    width: 100%;
     height: 100vw;
     /* display:flex; */
     z-index:1;
     background-image: url("/assets/images/Solace_cover1.png");
     background-position: left top;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     position: fixed;
     transform: rotate(-5deg);
     top: -75px;
+    background-size: contain;
+    max-width: 670px;
+    left: 30px;
 }
 
 
-.page:nth-child(1):after {
+.page:nth-child(2):after {
     content:" ";
     width: 100%;
-    height:100vw;
+    height: 100vw;
     display:flex;
     z-index:1;
     background-image: url("/assets/images/Solace_cover2.png");
     background-position: right top;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     position: fixed;
     transform: rotate(5deg);
-    top: -75px;
+    top: -40px;
+    background-size: contain;
+    max-width: 670px;
+    right: 30px;
 }
 
 .fadein img {
   z-index:10;
   position: relative;
 }
+
