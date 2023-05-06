@@ -125,3 +125,39 @@ html, body, .wrapper {
  .content a:hover {
      text-decoration:dotted;
 }
+
+.page:nth-child(1):before {
+    content:" ";
+    width:100%;
+    height: 100vw;
+    /* display:flex; */
+    z-index:1;
+    background-image: url("/assets/images/Solace_cover1.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    position: fixed;
+    transform: rotate(-5deg);
+    top: -75px;
+}
+
+
+.page:nth-child(1):after {
+    content:" ";
+    width: 100%;
+    height:100vw;
+    display:flex;
+    z-index:1;
+    background-image: url("/assets/images/Solace_cover2.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    position: fixed;
+    transform: rotate(5deg);
+    top: -75px;
+}
+
+.fadein img {
+  z-index:10;
+  position: relative;
+}
