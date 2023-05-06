@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
  body {
-     background-color: black;
+     background-color: #d0d0d0;
 }
  .wrapper {
      width: 100%;
@@ -53,8 +53,11 @@ html, body, .wrapper {
      transform: none;
      opacity: 1;
 }
- .hero {
-     font-family: 'Advent Pro', sans-serif;
+.hero {
+    font-family: 'Advent Pro', sans-serif;
+    z-index: 1000;
+    position: relative;
+    background: black;
 }
  .hero img {
      width: 100%;
