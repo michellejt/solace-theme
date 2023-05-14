@@ -172,3 +172,23 @@ html, body, .wrapper {
   position: relative;
 }
 
+/* about page */
+.page:has(#about) {
+    z-index:200;
+    position: relative;
+    background: black;
+    text-align:left;
+    height: unset;
+}
+
+.fadein:has(.about) {
+   height: unset;
+}
+
+#about {
+    padding:20px 300px 0 300px;
+}
+
+#about-solace {
+    font-size:2rem;
+}
