@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap');
+
  body {
      background-color: #d0d0d0;
      margin: -1px;
+     font-family: 'Figtree', sans-serif;
 }
  .wrapper {
      width: 100%;
@@ -172,7 +175,7 @@ html, body, .wrapper {
   position: relative;
 }
 
-/* about page */
+/*
 .page:has(#about) {
     z-index:200;
     position: relative;
@@ -189,6 +192,26 @@ html, body, .wrapper {
     padding:20px 300px 0 300px;
 }
 
-#about-solace {
+.page:has(#about) h2
+{
     font-size:2rem;
 }
+
+.page:has(#about) h3
+{
+    font-size:1.5rem;
+}
+/* about the authors 
+#andy {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#andy h3{
+    display: flex;
+}
+
+#andy-corrigan + p {
+    display: flex;
+} */
+
