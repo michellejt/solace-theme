@@ -215,3 +215,61 @@ html, body, .wrapper {
     display: flex;
 } */
 
+/* about page */
+.page:has(#about) {
+    z-index:200;
+    position: relative;
+    background: black;
+    text-align:left;
+    height: unset;
+    scroll-snap-align:none;
+}
+
+.fadein:has(.about) {
+   height: unset;
+}
+
+#about {
+    padding:20px 300px 0 300px;
+}
+
+.page:has(#about) h2
+{
+    font-size:2rem;
+}
+
+.page:has(#about) h3
+{
+    font-size:1.5rem;
+}
+
+#card {
+  display: flex;
+  flex: 25%;
+}
+
+#cardimage {
+  display: flex;
+}
+
+#cardimage img {
+  display: block;
+  height: 100%;
+  width: 200px;
+  padding-right: 10px;
+}
+
+#cardbody {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#creators {
+    display: flex;
+}
+
+.wrapper:has(#about) {
+    background:#000;
+  }
