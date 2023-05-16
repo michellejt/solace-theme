@@ -237,9 +237,6 @@ html, body, .wrapper {
 }
 
 @media (max-width: 767px) {
-    #about {
-      background: lightblue!important;    
-    }
     #cardimage {
       display:block!important;
     }
