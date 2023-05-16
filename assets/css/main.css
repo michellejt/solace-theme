@@ -241,17 +241,17 @@ html, body, .wrapper {
       background: lightblue!important;    
     }
     #cardimage {
-      display:block;
+      display:block!important;
     }
   
     #cardimage img{
       max-width:150px;
     }
       #creators {
-          display:block;
+          display:block!important;
       }
       #cardbody {
-          display:block;
+          display:block!important;
       }
   }
 
