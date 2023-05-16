@@ -241,7 +241,7 @@ html, body, .wrapper {
       background: lightblue!important;    
     }
     #cardimage {
-      display:initial;
+      display:block;
     }
   
     #cardimage img{
