@@ -236,24 +236,24 @@ html, body, .wrapper {
     margin: auto;
 }
 
-@media only screen and (max-width: 767px) {
-  #about {
-    background: lightblue!important;    
-  }
-  #cardimage {
-    display:initial;
-  }
-
-  #cardimage img{
-    max-width:150px;
-  }
-    #creators {
-        display:initial;
+@media (max-width: 767px) {
+    #about {
+      background: lightblue!important;    
     }
-    #cardbody {
-        display:initial;
+    #cardimage {
+      display:initial;
     }
-}
+  
+    #cardimage img{
+      max-width:150px;
+    }
+      #creators {
+          display:block;
+      }
+      #cardbody {
+          display:block;
+      }
+  }
 
 
 .page:has(#about) h2
