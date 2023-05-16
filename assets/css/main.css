@@ -276,9 +276,10 @@ html, body, .wrapper {
 }
 
 #cardimage img {
-  display: block;
-  width: 200px;
-  padding-right: 10px;
+    display: block;
+    height: 100%;
+    width: 200px;
+    padding-right: 10px;
 }
 
 #cardbody {
@@ -297,3 +298,4 @@ margin-bottom:0!important;
 .wrapper:has(#about) {
     background:#000;
   }
+
