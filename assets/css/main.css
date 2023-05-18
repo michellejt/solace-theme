@@ -301,3 +301,26 @@ margin-bottom:0!important;
     background:#000;
   }
 
+  @media only screen and (max-width: 1200px) {
+    .page:nth-child(2):before {
+          content: " ";
+      width: 100%;
+      height: 100vh;
+      /* display: flex; */
+      z-index: 1;
+      background-image: url(/assets/images/Solace_cover1.png);
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: fixed;
+      transform: rotate(-5deg);
+      top: 0px;
+      background-size: cover;
+      max-width: initial;;
+      left: 0px;
+      }
+        .page:nth-child(2):after {
+      background-image: none;
+      }
+  
+  }
