@@ -58,7 +58,6 @@ html, body, .wrapper {
      opacity: 1;
 }
 .hero {
-    font-family: 'Advent Pro', sans-serif;
     z-index: 1000;
     position: relative;
     background: black;
