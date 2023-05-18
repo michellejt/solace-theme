@@ -312,7 +312,7 @@ margin-bottom:0!important;
       background-repeat: no-repeat;
       background-attachment: fixed;
       position: fixed;
-      transform: rotate(-5deg);
+      transform: rotate(0deg);
       top: 0px;
       background-size: cover;
       max-width: initial;;
