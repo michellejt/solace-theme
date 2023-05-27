@@ -132,7 +132,7 @@ html, body, .wrapper {
      text-decoration:dotted;
 }
 .page:nth-child(2) {
-background-image: url(/assets/images/Solace_cover1.png);
+background-image: url(/assets/images/Solace_cover1.webp);
 background-attachment: fixed;
 background-size: contain;
 }
@@ -143,7 +143,7 @@ background-size: contain;
     height: 100vw;
     /* display:flex; */
     z-index:1;
-    background-image: url("/assets/images/Solace_cover1.png");
+    background-image: url("/assets/images/Solace_cover2.webp");
     background-position: left top;
     background-repeat: no-repeat;
     background-attachment: fixed;
