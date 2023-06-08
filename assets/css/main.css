@@ -109,8 +109,7 @@ html, body, .wrapper {
 }
  .hero .down {
      font-size: 2rem;
-     margin-top: -150px;
-     bottom: 0;
+     bottom: 75px;
      position: relative;
      animation: fadeInAnimation ease 5s;
      opacity:0;
@@ -294,6 +293,19 @@ margin-bottom:0!important;
 }
 #creators {
     display: flex;
+}
+
+.about {
+    font-size: 1rem;
+    letter-spacing: .25rem;
+    font-weight: bold;
+}
+
+.logo-about {
+    max-width: 30%;
+    display:flex;
+    height: auto!important;
+    margin: auto;
 }
 
 .wrapper:has(#about) {
