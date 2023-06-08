@@ -87,6 +87,7 @@ html, body, .wrapper {
  .hero h3 {
      font-size: 1rem;
      letter-spacing: .25rem;
+     line-height: 30px;
      animation: fadeInAnimation ease 5s;
      opacity:0;
      animation-iteration-count: 1;
@@ -127,6 +128,7 @@ html, body, .wrapper {
 
 a, a:focus, a:hover {
     color: inherit;
+    text-underline-offset: 8px;
 }
  .content a {
      color:inherit 
@@ -302,8 +304,7 @@ margin-bottom:0!important;
 .about-comic {
     font-size: 1rem;
     letter-spacing: .25rem;
-    font-size: 1rem;
-     letter-spacing: .25rem;
+    font-weight: bold;
      animation: fadeInAnimation ease 5s;
     opacity:0;
     animation-iteration-count: 1;
