@@ -124,6 +124,10 @@ html, body, .wrapper {
      margin-top: 20px;
      margin-bottom: 0px;
 }
+
+a, a:focus, a:hover {
+    color: inherit;
+}
  .content a {
      color:inherit 
 }
@@ -298,7 +302,14 @@ margin-bottom:0!important;
 .about {
     font-size: 1rem;
     letter-spacing: .25rem;
-    font-weight: bold;
+    font-size: 1rem;
+     letter-spacing: .25rem;
+     animation: fadeInAnimation ease 5s;
+    opacity:0;
+    animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+    animation-delay: 7s;
+
 }
 
 .logo-about {
