@@ -345,7 +345,60 @@ margin-bottom:0!important;
         .page:nth-child(2):after {
       background-image: none;
       }
-.page:nth-child(2) {
+  .page:nth-child(2) {
     background-image: none;
-}  
+    }  
+  }
+
+
+
+  :root {
+    --gradient-offset: 30%;
+    --steps: 30;
+  }
+  
+  .about {
+    position: inherit;
+    inset: inherit;
+    background: var(--bg) no-repeat center/cover;
+    transition: --gradient-stop 1s ease-out;
+    -webkit-mask: radial-gradient(70% 70% at 50% 50%, black var(--gradient-stop), transparent calc(var(--gradient-stop) + var(--gradient-offset)));
+    mask: radial-gradient(70% 70% at 50% 50%, black var(--gradient-stop), transparent calc(var(--gradient-stop) + var(--gradient-offset)));
+    -webkit-mask-image: url(https://raisely-images.imgix.net/www/uploads/urban-sprite-png-bc7175.png);
+    -webkit-mask-size: calc(150% * var(--steps)) 150%;
+    mask-size: calc(150% * var(--steps)) 150%;
+    -webkit-mask-position: right;
+    mask-position: right;
+    animation-delay: 1.25s;
+    -webkit-animation: animateMask 2.25s steps(calc(var(--steps) - 1)) forwards;
+    animation: animateMask 2.25s steps(calc(var(--steps) - 1)) forwards;
+  }
+  
+
+  @-webkit-keyframes "animateMask" {
+    0% {
+      -webkit-mask-position: right;
+      mask-position: right;
+    }
+    100% {
+      -webkit-mask-position: left;
+      mask-position: left;
+    }
+  }
+  @keyframes "animateMask" {
+    0% {
+      -webkit-mask-position: right;
+      mask-position: right;
+    }
+    100% {
+      -webkit-mask-position: left;
+      mask-position: left;
+    }
+  }
+  @property {
+    --gradient-stop {
+      syntax: "<percentage>";
+      inherits: false;
+      initial-value: 100%;
+    }
   }
