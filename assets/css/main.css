@@ -364,7 +364,7 @@ margin-bottom:0!important;
     transition: --gradient-stop 1s ease-out;
     -webkit-mask: radial-gradient(70% 70% at 50% 50%, black var(--gradient-stop), transparent calc(var(--gradient-stop) + var(--gradient-offset)));
     mask: radial-gradient(70% 70% at 50% 50%, black var(--gradient-stop), transparent calc(var(--gradient-stop) + var(--gradient-offset)));
-    -webkit-mask-image: url(https://raisely-images.imgix.net/www/uploads/urban-sprite-png-bc7175.png);
+    -webkit-mask-image: url(/assets/images/ink.png);
     -webkit-mask-size: calc(150% * var(--steps)) 150%;
     mask-size: calc(150% * var(--steps)) 150%;
     -webkit-mask-position: right;
