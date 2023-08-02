@@ -459,10 +459,7 @@ list-style-type: none;
 
 .modal-content img {
   max-width: 100px;
-}
-
-.modal-content img {
-  max-width: 100px;
+  animation: none;
 }
 .modal-content span {
   display: block;
@@ -473,15 +470,15 @@ list-style-type: none;
   
   /* The Close Button */
   .close {
-    color: #aaaaaa;
+    color: #aaaaaa !important;
     float: right;
-    font-size: 28px;
+    font-size: 28px !important;
     font-weight: bold;
   }
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #000!important;
     text-decoration: none;
     cursor: pointer;
   }
