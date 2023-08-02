@@ -31,37 +31,28 @@ function typeWriter() {
 }
 setTimeout(typeWriter,2500);
 
+// Get the modal
+var modal = document.getElementById("myModal");
 
-let modal;
-document.addEventListener("click", (e) => {
-  if (e.target.className === "modal-open") {
-    modal = document.getElementById(e.target.dataset.id);
-    openModal(modal);
-  } else if (e.target.className === "modal-close") {
-    closeModal(modal);
-  } else {
-    return;
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-});
-
-const openModal = (modal) => {
-  document.body.style.overflow = "hidden";
-  modal.setAttribute("open", "true");
-  document.addEventListener("keydown", escClose);
-  let overlay = document.createElement("div");
-  overlay.id = "modal-overlay";
-  document.body.appendChild(overlay);
-};
-
-const closeModal = (modal) => {
-  document.body.style.overflow = "auto";
-  modal.removeAttribute("open");
-  document.removeEventListener("keydown", escClose);
-  document.body.removeChild(document.getElementById("modal-overlay"));
-};
-
-const escClose = (e) => {
-  if (e.keyCode == 27) {
-    closeModal();
-  }
-};
+}
