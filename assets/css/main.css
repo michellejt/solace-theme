@@ -6,6 +6,12 @@
      margin: -1px;
      font-family: 'Figtree', sans-serif;
 }
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */
+  .wrapper {
+    height: 100%;
+  }
+}
  .wrapper {
      width: 100%;
      height: 100vh;
