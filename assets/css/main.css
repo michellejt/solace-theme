@@ -485,10 +485,12 @@ list-style-type: none;
   
   /* The Close Button */
   .close {
-    color: #aaaaaa !important;
-    float: right;
-    font-size: 28px !important;
-    font-weight: bold;
+    color: #554e4e !important;
+float: right;
+font-size: 40px !important;
+font-weight: bold;
+top: -13px;
+position: relative;
   }
   
   .close:hover,
