@@ -8,7 +8,7 @@
 }
 @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices */
-  .wrapper {
+  .wrapper, .page {
     min-height: 100%;
   }
 }
