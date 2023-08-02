@@ -403,10 +403,18 @@ margin-bottom:0!important;
     }
   }
 
-  #openModal {
+  .downloads {
+    font-family: inherit;
+    font-size: 1rem;
+letter-spacing: .25rem;
+font-weight: bold;
+  }  
+#openModal {
     all: unset;
     font-family: inherit;
-    font-size: initial;
+    font-size: 1rem;
+letter-spacing: .25rem;
+font-weight: bold;
     text-decoration: underline;
       text-underline-offset: 8px;
     cursor: pointer;
