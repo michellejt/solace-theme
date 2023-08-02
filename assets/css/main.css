@@ -452,7 +452,8 @@ font-weight: bold;
     width: 50%;
     animation: none;
     border-radius: 35px;
-    max-width: 500px;       
+    max-width: 500px;    
+    animation: none;   
   }
   .modal-content ul {
   left: -20px;
